@@ -223,7 +223,7 @@ public class SensorGraph extends Activity {
 					String strTime = ts.toString(); //Time stamp stringbuilder to string
 					
 					String strI = sb.toString(); // Value stringbulder to string
-					writer.append(strTime+ "|" +strI + "\n"); // Add to .txt file
+					writer.append(strTime+ " " +strI + "\n"); // Add to .txt file
 					}
 				       writer.flush(); 
 				       writer.close();

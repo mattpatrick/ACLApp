@@ -206,34 +206,35 @@
         android:onClick="goHomeScreen"
         android:text="Return to Home Screen"
         android:textColor="@color/white"
-        android:textSize="32sp" />
-
-    <Button
-        android:id="@+id/refresh"
-        android:layout_width="400dp"
-        android:layout_height="69dp"
-        android:layout_above="@+id/goHomeScreen"
-        android:layout_alignLeft="@+id/goHomeScreen"
-        android:layout_marginBottom="19dp"
-        android:background="@drawable/blue_button_color"
-        android:fontFamily="sans-serif-thin"
-        android:onClick="refresh"
-        android:text="Refresh Connection"
-        android:textColor="@color/white"
-        android:textSize="32sp" />
+        android:textSize="32sp" 
+        android:layout_marginBottom="21dp"/>
 
     <ToggleButton
         android:id="@+id/togglebutton"
         android:layout_width="400dp"
         android:layout_height="69dp"
-        android:layout_above="@+id/refresh"
-        android:layout_alignLeft="@+id/refresh"
-        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/goHomeScreen"
+        android:layout_alignLeft="@+id/goHomeScreen"
         android:background="@drawable/toggle_color"
         android:fontFamily="sans-serif-thin"
         android:onClick="dataStart"
         android:textOff="Start Data"
         android:textOn="Stop Data"
-        android:textSize="32sp" />
+        android:textSize="32sp" 
+        android:layout_marginBottom="21dp"/>
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="400dp"
+        android:layout_height="69dp"
+        android:layout_above="@+id/togglebutton"
+        android:layout_alignLeft="@+id/togglebutton"
+        android:background="@drawable/white_button_color"
+        android:fontFamily="sans-serif-thin"
+        android:onClick="refresh"
+        android:text="Refresh Connection"
+        android:textColor="@color/black"
+        android:textSize="32sp" 
+        android:layout_marginBottom="21dp"/>
 	
 </RelativeLayout>
