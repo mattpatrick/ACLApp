@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	
+	android:orientation="vertical"
+	android:background="@color/black"
+
+    >
+
+    <com.example.aclapp.GraphView
+        android:id="@+id/graph"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:background="#000000" 
+		android:layout_alignParentTop="true"
+        android:layout_marginLeft = "5dip"
+        android:layout_marginRight = "5dip"
+        android:layout_marginTop = "5dip"
+        android:layout_marginBottom = "5dip"/>
+<!-- 		<TextView
+	    android:id="@+id/userAge"
+	    android:layout_height="28dp"
+	    android:layout_width="fill_parent"
+	    android:gravity="center"/> -->
+	
+
+	<TextView
+	    android:id="@+id/value"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/graph"
+	    android:gravity="center"
+	    android:text="Graph value"
+	    android:textSize="40sp" />
+
+	<TextView
+	    android:id="@+id/ptInfoLabel"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    
+	    android:layout_below="@+id/ptLabelBar1"
+	    android:layout_alignParentLeft="true"
+	    android:gravity="center"
+	    android:text="Patient Information"
+	    android:textSize="32sp" />
+	 <View
+	    android:id="@+id/ptLabelBar1"
+	    android:layout_below="@+id/value"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#FFFFFF"
+	    />
+    <View
+        android:id="@+id/ptLabelBar2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#FFFFFF"
+	    android:layout_below="@+id/ptInfoLabel"/>
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ptInfoLabel"
+        android:src="@drawable/ic_launcher" 
+         android:layout_marginLeft = "10dip"
+        
+        android:layout_marginTop = "10dip"
+        />
+
+    <TextView
+        android:id="@+id/IDLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userImage"
+        android:layout_toRightOf="@+id/userImage"
+        android:fontFamily="sans-serif-thin"
+        android:text="ID: "
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/idHospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hospitalLabel"
+        android:layout_alignBottom="@+id/hospitalLabel"
+        android:layout_toRightOf="@+id/hospitalLabel"
+        android:fontFamily="sans-serif-thin"
+        android:text="Large Text"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/doctorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hospitalLabel"
+        android:layout_below="@+id/hospitalLabel"
+        android:fontFamily="sans-serif-thin"
+        android:text="Physician: "
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/idDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ageLabel"
+        android:layout_toRightOf="@+id/doctorLabel"
+        android:fontFamily="sans-serif-thin"
+        android:text="Large Text"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/doctorLabel"
+        android:layout_below="@+id/doctorLabel"
+        android:fontFamily="sans-serif-thin"
+        android:text="Patient Age: "
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/userAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userHeight"
+        android:layout_toRightOf="@+id/ageLabel"
+        android:fontFamily="sans-serif-thin"
+        android:text="Age"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/heightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/graph"
+        android:layout_below="@+id/ageLabel"
+        android:fontFamily="sans-serif-thin"
+        android:text="Patient Height: "
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/userHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/heightLabel"
+        android:layout_alignBottom="@+id/heightLabel"
+        android:layout_toRightOf="@+id/heightLabel"
+        android:fontFamily="sans-serif-thin"
+        android:text="Height"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/hospitalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/IDLabel"
+        android:layout_below="@+id/IDLabel"
+        android:fontFamily="sans-serif-thin"
+        android:text="Hospital: "
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/userID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idHospital"
+        android:layout_toRightOf="@+id/IDLabel"
+        android:fontFamily="sans-serif-thin"
+        android:text="Large Text"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/weightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/heightLabel"
+        android:layout_below="@+id/heightLabel"
+        android:fontFamily="sans-serif-thin"
+        android:text="Patient Weight: "
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/userWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/weightLabel"
+        android:layout_alignBottom="@+id/weightLabel"
+        android:layout_toRightOf="@+id/weightLabel"
+        android:fontFamily="sans-serif-thin"
+        android:text="Weight"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/goHomeScreen"
+        android:layout_width="400dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/blue_button_color"
+        android:fontFamily="sans-serif-thin"
+        android:onClick="goHomeScreen"
+        android:text="Return to Home Screen"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="400dp"
+        android:layout_height="69dp"
+        android:layout_above="@+id/goHomeScreen"
+        android:layout_alignLeft="@+id/goHomeScreen"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/blue_button_color"
+        android:fontFamily="sans-serif-thin"
+        android:onClick="refresh"
+        android:text="Refresh Connection"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton"
+        android:layout_width="400dp"
+        android:layout_height="69dp"
+        android:layout_above="@+id/refresh"
+        android:layout_alignLeft="@+id/refresh"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/toggle_color"
+        android:fontFamily="sans-serif-thin"
+        android:onClick="dataStart"
+        android:textOff="Start Data"
+        android:textOn="Stop Data"
+        android:textSize="32sp" />
+	
+</RelativeLayout>

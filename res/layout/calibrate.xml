@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	
+	android:orientation="vertical"
+	android:background="@color/black"
+
+    >
+
+    <com.example.aclapp.GraphView
+        android:id="@+id/calibrateGraph"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:background="#000000" 
+		android:layout_alignParentTop="true"
+        android:layout_marginLeft = "5dip"
+        android:layout_marginRight = "5dip"
+        android:layout_marginTop = "5dip"
+        android:layout_marginBottom = "5dip"/>
+<!-- 		<TextView
+	    android:id="@+id/userAge"
+	    android:layout_height="28dp"
+	    android:layout_width="fill_parent"
+	    android:gravity="center"/> -->
+	<TextView
+	    android:id="@+id/calibrateValue"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/calibrateGraph"
+	    android:gravity="center"
+	    android:text="Graph value"
+	    android:textSize="40sp" />
+
+	<Button
+	    android:id="@+id/calibrateButton"
+	    android:layout_width="400dp"
+	    android:layout_height="69dp"
+	    android:layout_above="@+id/calibrateRefresh"
+	    android:layout_alignLeft="@+id/calibrateRefresh"
+	    android:layout_marginBottom="23dp"
+	    android:background="@drawable/blue_button_color"
+	    android:fontFamily="sans-serif-thin"
+	    android:onClick="calibrateButton"
+	    android:text="Press to Calibrate"
+	    android:textColor="@color/white"
+	    android:textSize="32sp" />
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+		android:text = "Calibration Timer"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/calibrateStartData"
+        android:layout_width="400dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/blue_button_color"
+        android:fontFamily="sans-serif-thin"
+        android:onClick="calibrateStartData"
+        android:text="Begin Gathering Data"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/calibrateRefresh"
+        android:layout_width="400dp"
+        android:layout_height="69dp"
+        android:layout_above="@+id/calibrateStartData"
+        android:layout_alignLeft="@+id/calibrateStartData"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/blue_button_color"
+        android:fontFamily="sans-serif-thin"
+        android:onClick="calibrateRefresh"
+        android:text="Refresh Connection"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+</RelativeLayout>

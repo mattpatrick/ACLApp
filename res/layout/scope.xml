@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	
+	android:orientation="vertical"
+	android:background="@color/black"
+
+    >
+
+    <com.example.aclapp.GraphView
+        android:id="@+id/scope"
+        android:layout_width="fill_parent"
+        android:layout_height="350dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:background="#000000" />
+
+	<Button
+	    android:id="@+id/refreshView"
+	    android:layout_width="400dp"
+	    android:layout_height="69dp"
+	    android:layout_alignLeft="@+id/scope"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/blue_button_color"
+	    android:fontFamily="sans-serif-thin"
+	    android:onClick="refresh"
+	    android:text="Refresh Connection"
+	    android:textColor="@color/white"
+	    android:textSize="32sp" />
+
+	<Button
+	    android:id="@+id/returnHome"
+	    android:layout_width="400dp"
+	    android:layout_height="69dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignRight="@+id/scope"
+	    android:background="@drawable/blue_button_color"
+	    android:fontFamily="sans-serif-thin"
+	    android:onClick="goHome"
+	    android:text="Return to Home Screen"
+	    android:textColor="@color/white"
+	    android:textSize="32sp" />
+
+	<TextView
+	    android:id="@+id/scopeValue"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/scope"
+	    android:gravity="center"
+	    android:text="0"
+	    android:textSize="40sp" />
+
+	<Button
+	    android:id="@+id/peak"
+	    android:layout_width="400dp"
+	    android:layout_height="69dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/scope"
+	    android:background="@drawable/blue_button_color"
+	    android:fontFamily="sans-serif-thin"
+	    android:onClick="peak"
+	    android:text="Peak"
+	    android:textColor="@color/white"
+	    android:textSize="32sp" />
+	
+</RelativeLayout>

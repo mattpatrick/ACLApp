@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity = "center_horizontal" >
+    
+    	<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#FFFFFF"/>
+	
+     <TextView
+        android:text="Patient Information"
+        android:gravity="center"
+       	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+        android:textSize="32sp"/>
+     	<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#FFFFFF"/>	
+    
+    <TextView
+        android:text="Patient Sex"
+        android:gravity="center"
+       	android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="24sp" 
+        />
+	<RadioGroup
+        android:id="@+id/editRadioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+ 		android:orientation = "horizontal"
+ 		>
+        <RadioButton
+            android:id="@+id/editRadioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male" 
+            android:checked="true" 
+            android:gravity = "left"/>
+ 
+        <RadioButton
+            android:id="@+id/editRadioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female" 
+            android:gravity="right"/>
+    </RadioGroup>
+    <TextView
+        android:text="Patient Age"
+        android:gravity="center"
+       	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+	<EditText
+	    android:id="@+id/editpt_age"
+		android:layout_width="300dip"
+		android:layout_height="wrap_content" 
+		android:inputType="number"
+	    />
+	
+	
+	
+	    <TextView
+        android:text="Patient Height (inches)"
+        android:gravity="center"
+       	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+		<EditText
+	    android:id="@+id/editpt_height"
+		android:layout_width="300dip"
+		android:layout_height="wrap_content" 
+		android:inputType="number"
+	    />
+		
+			    <TextView
+        android:text="Patient Weight (lbs)"
+        android:gravity="center"
+       	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+		<EditText
+	    android:id="@+id/editpt_weight"
+		android:layout_width="300dip"
+		android:layout_height="wrap_content" 
+		android:inputType="number"
+	    />
+		
+	<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#FFFFFF"/>	
+     <TextView
+        android:text="Physician Information"
+        android:gravity="center"
+       	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+        android:textSize="32sp"/>
+     	<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#FFFFFF"/>
+     	
+    <TextView
+        android:text="Hospital Name"
+        android:gravity="center"
+       	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+	<EditText
+	    android:id="@+id/editHospital"
+		android:layout_width="300dip"
+		android:layout_height="wrap_content" 
+		android:inputType="text"
+	    />	
+	<TextView
+        android:text="Physician Name"
+        android:gravity="center"
+       	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+	<EditText
+	    android:id="@+id/editDoctor"
+		android:layout_width="300dip"
+		android:layout_height="wrap_content" 
+		android:inputType="text"
+	    />	
+	<Button 
+	    android:id="@+id/editProfile"
+	   	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Edit Profile"
+		android:onClick="editProfile"
+		
+		       
+        android:background="@drawable/blue_button_color"
+        android:textColor = "@color/white"
+        android:fontFamily="sans-serif-thin" 
+        android:textSize = "40sp"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+	    />
+	<Button
+	    android:id="@+id/returnToList"
+	   	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Return to Patient List"
+		android:onClick="returnToList"
+		
+		android:background="@drawable/blue_button_color"
+        android:textColor = "@color/white"
+        android:fontFamily="sans-serif-thin" 
+        android:textSize = "40sp"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+		/>
+
+	<Button
+	    android:id="@+id/DeleteUser"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/blue_button_color"
+	    android:fontFamily="sans-serif-thin"
+	    android:onClick="deleteUser"
+	    android:text="Delete Profile"
+	    android:textColor="@color/white"
+	    android:textSize="40sp" />
+
+	<TextView 
+	    android:id = "@+id/editRecordView"
+	    android:gravity="center"
+       	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+
+</LinearLayout>

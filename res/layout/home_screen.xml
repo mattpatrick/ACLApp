@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    tools:context=".MainActivity" 
+    android:weightSum="0.9"
+	android:background="@color/black">
+    <RelativeLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.3"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="4dip"
+        android:id="@+id/button1"
+        android:clickable="true" 
+        android:focusable="true"
+        android:background="@drawable/doctor_selector">
+		
+       <View
+		    android:id="@+id/myRectangleView"
+		    android:layout_width="match_parent"
+		    android:layout_height="60dp"
+		    android:layout_alignParentBottom="true"
+		    android:background="@drawable/rectangle"/>
+       <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Start New Study"
+	        android:fontFamily="sans-serif-thin" 
+	        android:textSize="40sp"
+	        android:textColor="#FFFFFF" 
+	        android:layout_marginRight="8dip"
+	        android:layout_marginBottom="4dip"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:id="@+id/study_text"/>
+		
+	
+     </RelativeLayout>
+     
+     <RelativeLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.3"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="4dip"
+        android:id="@+id/button2"
+        android:clickable="true" 
+        android:focusable="true"
+        android:background="@drawable/files_selector">
+
+       <View
+		    android:id="@+id/myRectangleView"
+		    android:layout_width="match_parent"
+		    android:layout_height="60dp"
+		    android:layout_alignParentBottom="true"
+		    android:background="@drawable/rectangle"/>
+       <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Patient Data"
+	        android:fontFamily="sans-serif-thin" 
+	        android:textSize="40sp"
+	        android:textColor="#FFFFFF" 
+	        android:layout_marginRight="8dip"
+	        android:layout_marginBottom="4dip"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:id="@+id/data"/>
+
+	
+     </RelativeLayout>
+     
+          <RelativeLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.3"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="4dip"
+        android:id="@+id/button3"
+		android:clickable="true" 
+        android:focusable="true"
+        android:background="@drawable/waves_selector">
+
+       <View
+		    android:id="@+id/myRectangleView"
+		    android:layout_width="match_parent"
+		    android:layout_height="60dp"
+		    android:layout_alignParentBottom="true"
+		    android:background="@drawable/rectangle"/>
+       <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="View Oscilloscope"
+	        android:fontFamily="sans-serif-thin" 
+	        android:textSize="40sp"
+	        android:textColor="#FFFFFF" 
+	        android:layout_marginRight="8dip"
+	        android:layout_marginBottom="4dip"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:id="@+id/scope"/>
+
+	
+    </RelativeLayout>
+
+</LinearLayout>

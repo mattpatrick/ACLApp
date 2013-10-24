@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/black">
+    
+		
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/list_item_selector">
+         
+        
+    <ImageView
+        android:id="@+id/itemSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        
+        android:maxHeight="150dip"
+        android:maxWidth="150dip"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/itemDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/itemAge"
+        android:layout_alignBottom="@+id/itemAge"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="20sp"
+        />
+	
+    <TextView
+        android:id="@+id/patientViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/itemSex"
+        android:layout_toRightOf="@+id/itemSex"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:text="Patient ID:"
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/itemId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_alignBottom="@+id/patientViewID"
+        android:layout_toRightOf="@+id/patientViewID"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-thin"
+        />
+
+    <TextView
+        android:id="@+id/itemHospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/itemSex"
+        android:layout_below="@+id/patientViewID"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemHospital"
+        android:layout_alignLeft="@+id/patientViewID"
+        android:text="Patient Age:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" 
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/itemAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemHospital"
+        android:layout_toRightOf="@+id/ageLabel"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" 
+        android:fontFamily="sans-serif-thin"/>
+
+	</RelativeLayout>
+</RelativeLayout>

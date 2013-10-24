@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aclapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+         >
+        <activity
+            android:name="com.example.aclapp.HomeScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.example.aclapp.SensorGraph"
+            android:label="@string/title_activity_sensor_graph"
+            android:parentActivityName="com.example.aclapp.HomeScreen" 
+            android:screenOrientation="portrait">
+        </activity>
+		<activity
+            android:name="com.example.aclapp.AddUser"
+            android:label="Add User"
+            android:parentActivityName="com.example.aclapp.HomeScreen" 
+            android:screenOrientation="portrait">
+        </activity>
+        		<activity
+            android:name="com.example.aclapp.ViewUsers"
+            android:label="View Users"
+            android:parentActivityName="com.example.aclapp.ViewUsers" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.aclapp.ChooseUser"
+            android:label="Choose User"
+            android:parentActivityName="com.example.aclapp.HomeScreen" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.aclapp.EditUser"
+            android:label="Edit User"
+            android:parentActivityName="com.example.aclapp.HomeScreen" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.aclapp.Scope"
+            android:label="Scope"
+            android:parentActivityName="com.example.aclapp.HomeScreen" 
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.example.aclapp.Calibrate"
+            android:label="Scope"
+            android:parentActivityName="com.example.aclapp.HomeScreen" 
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
