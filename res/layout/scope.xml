@@ -25,11 +25,11 @@
 	    android:layout_height="69dp"
 	    android:layout_alignLeft="@+id/scope"
 	    android:layout_alignParentBottom="true"
-	    android:background="@drawable/blue_button_color"
+	    android:background="@drawable/white_button_color"
 	    android:fontFamily="sans-serif-thin"
 	    android:onClick="refresh"
 	    android:text="Refresh Connection"
-	    android:textColor="@color/white"
+	    android:textColor="@color/black"
 	    android:textSize="32sp" />
 
 	<Button
@@ -55,17 +55,6 @@
 	    android:text="0"
 	    android:textSize="40sp" />
 
-	<Button
-	    android:id="@+id/peak"
-	    android:layout_width="400dp"
-	    android:layout_height="69dp"
-	    android:layout_alignParentRight="true"
-	    android:layout_alignTop="@+id/scope"
-	    android:background="@drawable/blue_button_color"
-	    android:fontFamily="sans-serif-thin"
-	    android:onClick="peak"
-	    android:text="Peak"
-	    android:textColor="@color/white"
-	    android:textSize="32sp" />
+
 	
 </RelativeLayout>

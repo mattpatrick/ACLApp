@@ -33,20 +33,6 @@
 	    android:gravity="center"
 	    android:text="Graph value"
 	    android:textSize="40sp" />
-
-	<Button
-	    android:id="@+id/calibrateButton"
-	    android:layout_width="400dp"
-	    android:layout_height="69dp"
-	    android:layout_above="@+id/calibrateRefresh"
-	    android:layout_alignLeft="@+id/calibrateRefresh"
-	    android:layout_marginBottom="23dp"
-	    android:background="@drawable/blue_button_color"
-	    android:fontFamily="sans-serif-thin"
-	    android:onClick="calibrateButton"
-	    android:text="Press to Calibrate"
-	    android:textColor="@color/white"
-	    android:textSize="32sp" />
     <TextView
         android:id="@+id/timer"
         android:layout_width="wrap_content"
@@ -62,26 +48,41 @@
         android:layout_height="69dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="23dp"
+        
         android:background="@drawable/blue_button_color"
         android:fontFamily="sans-serif-thin"
         android:onClick="calibrateStartData"
         android:text="Begin Gathering Data"
         android:textColor="@color/white"
-        android:textSize="32sp" />
+        android:textSize="32sp" 
+        android:layout_marginBottom="21dp"/>
 
     <Button
         android:id="@+id/calibrateRefresh"
         android:layout_width="400dp"
         android:layout_height="69dp"
-        android:layout_above="@+id/calibrateStartData"
-        android:layout_alignLeft="@+id/calibrateStartData"
-        android:layout_marginBottom="21dp"
-        android:background="@drawable/blue_button_color"
+        android:layout_above="@+id/calibrateButton"
+        android:layout_alignLeft="@+id/calibrateButton"
+        android:background="@drawable/white_button_color"
         android:fontFamily="sans-serif-thin"
         android:onClick="calibrateRefresh"
         android:text="Refresh Connection"
+        android:textColor="@color/black"
+        android:textSize="32sp" 
+        android:layout_marginBottom="21dp"/>
+
+    <Button
+        android:id="@+id/calibrateButton"
+        android:layout_width="400dp"
+        android:layout_height="69dp"
+        android:layout_above="@+id/calibrateStartData"
+        android:layout_alignLeft="@+id/calibrateStartData"
+        android:background="@drawable/blue_button_color"
+        android:fontFamily="sans-serif-thin"
+        android:onClick="calibrateButton"
+        android:text="Press to Calibrate"
         android:textColor="@color/white"
-        android:textSize="32sp" />
+        android:textSize="32sp" 
+        android:layout_marginBottom="21dp"/>
 
 </RelativeLayout>
